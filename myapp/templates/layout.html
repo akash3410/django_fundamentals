@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%}Jhon{%endblock%}</title>
+    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
+</head>
+<body>
+    <!-- Header -->
+  <header id="header-home">
+    <div class="container">
+      <nav id="main-nav">
+        {%include "partials/nav.html"%}
+      </nav>
+      <div>
+        {% block content%}
+        {%endblock%}
+      </div>
+    </div>
+  </header>
+</body>
+</html>

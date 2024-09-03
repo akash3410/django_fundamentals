@@ -1,0 +1,17 @@
+{%extends "layout.html"%}
+{%block content%}
+{%load static%}
+<link rel="stylesheet" href="{%static 'css/style.css'%}">
+<div>
+    <h2 class="loadCss">Load Images</h2>
+    <img width="33%" src="{%static 'images/pic1.jpg'%}" alt="pic1">
+    <img width="33%" src="{%static 'images/pic2.jpg'%}" alt="pic2">
+    <img width="33%" src="{%static 'images/pic3.jpg'%}" alt="pic3">
+    <img width="33%" src="{%static 'images/pic1.jpg'%}" alt="pic1">
+    <img width="33%" src="{%static 'images/pic2.jpg'%}" alt="pic2">
+    <img width="33%" src="{%static 'images/pic3.jpg'%}" alt="pic3">
+</div>
+{%endblock%}
+{%block title%}
+Images
+{%endblock%}
