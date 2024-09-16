@@ -1,0 +1,19 @@
+{%extends "layout.html"%}
+
+{%block tasks%}
+<h1>All Tasks</h1>
+<ul>
+    {%for task in tasks%}
+    <li><a href="{%url "task_details" task.pk%}">{{task.title}} -- {{task.due_date}} -- {{task.completed}}</a></li>
+    {%endfor%}
+</ul>
+<a href="/tasks/">All Task</a>
+<br>
+<a href="/tasks/?completed=1">View Completed Task</a>
+<br>
+<a href="/tasks/?completed=0">View incomplete Task</a>
+{%endblock%}
+
+{%block title%}
+Tasks
+{%endblock%}

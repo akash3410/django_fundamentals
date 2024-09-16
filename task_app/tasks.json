@@ -1,0 +1,46 @@
+[
+    {
+        "model": "task_app.Task",
+        "pk": 1,
+        "fields": {
+            "title": "Task 1",
+            "description": "This is Task 1",
+            "completed": true,
+            "created_at": "2024-08-25",
+            "due_date": "2024-08-29"
+        }
+    },
+    {
+        "model": "task_app.Task",
+        "pk": 2,
+        "fields": {
+            "title": "Task 2",
+            "description": "This is Task 2",
+            "completed": true,
+            "created_at": "2024-08-25",
+            "due_date": "2024-08-29"
+        }
+    },
+    {
+        "model": "task_app.Task",
+        "pk": 3,
+        "fields": {
+            "title": "Task 3",
+            "description": "This is Task 3",
+            "completed": true,
+            "created_at": "2024-08-25",
+            "due_date": "2024-08-29"
+        }
+    },
+    {
+        "model": "task_app.Task",
+        "pk": 4,
+        "fields": {
+            "title": "Task 4",
+            "description": "This is Task 4",
+            "completed": true,
+            "created_at": "2024-08-25",
+            "due_date": "2024-08-29"
+        }
+    }
+]

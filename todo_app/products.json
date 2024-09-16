@@ -1,0 +1,42 @@
+[
+    {
+        "model": "todo_app.Products",
+        "pk": 1,
+        "fields": {
+            "title": "Milk",
+            "description": "This is pasturized milk item.",
+            "completed": true,
+            "created_at": "2022-01-01 12:00:00"
+        }
+    },
+    {
+        "model": "todo_app.Products",
+        "pk": 2,
+        "fields": {
+            "title": "Ice-cream",
+            "description": "This is a chocklate falviour Ice-cream.",
+            "completed": false,
+            "created_at": "2022-01-01 12:00:00"
+        }
+    },
+    {
+        "model": "todo_app.Products",
+        "pk": 3,
+        "fields": {
+            "title": "Ice-cream",
+            "description": "This is a vanila falviour Ice-cream.",
+            "completed": true,
+            "created_at": "2022-01-01 12:00:00"
+        }
+    },
+    {
+        "model": "todo_app.Products",
+        "pk": 4,
+        "fields": {
+            "title": "Biscuit",
+            "description": "This is a solt biscuit.",
+            "completed": false,
+            "created_at": "2022-01-01 12:00:00"
+        }
+    }
+]
