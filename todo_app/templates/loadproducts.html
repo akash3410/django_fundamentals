@@ -2,9 +2,15 @@
 
 {%block products%}
 <h2>All Products</h2>
+<form method="get">
+    <input type="text" name="queary" placeholder="Search Product">
+    <button type="search">Search</button>
+</form>
+{{search_product}}
+{{search_term}}
 <ul>
     {%for product in products%}
-    <li><a href="{%url 'product_details' product.pk%}">{{product.pk}}. {{product.title}} - {{product.completed}}</a></li>
+        <li><a href="{%url 'product_details' product.pk%}">{{product.pk}}. {{product.title}} - {{product.completed}}</a></li>
     {%endfor%}
 </ul>
 

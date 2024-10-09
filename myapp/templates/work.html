@@ -1,12 +1,16 @@
 {%extends "layout.html"%}
+
 {%block content%}
+
 {%load static%}
 <script src="{%static 'js/script.js'%}"></script>
 <link rel="stylesheet" href="{%static 'css/style.css'%}">
+
 <h3>Load JS</h3>
 <p>Static = {%static 'js/script.js'%}</p>
 <h4 class="loadCss">Load css</h4>
 {%endblock%}
+
 {%block title%}
 Work
 {%endblock%}
