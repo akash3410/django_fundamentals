@@ -1,0 +1,15 @@
+{% extends "layout.html"%}
+
+{%block products%}
+<h2>Add Product</h2>
+<form method="Post">
+    {% csrf_token %}
+    {{forms}}
+    {{forms.error}}
+    <button type="submit" style="margin-top: 10px;">Submit</button>
+</form>
+{%endblock%}
+
+{%block title%}
+All Products
+{%endblock%}

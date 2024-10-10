@@ -3,17 +3,19 @@
 {%block products%}
 <h2>All Products</h2>
 <form method="get">
-    <input type="text" name="queary" placeholder="Search Product">
-    <button type="search">Search</button>
+    {{forms}}
+    {{forms.errors}}
+    <button type="submit" style="margin-top: 10px;">Search</button>
 </form>
-{{search_product}}
-{{search_term}}
 <ul>
     {%for product in products%}
         <li><a href="{%url 'product_details' product.pk%}">{{product.pk}}. {{product.title}} - {{product.completed}}</a></li>
     {%endfor%}
+    <p>{{noproduct}}</p>
 </ul>
 
+<a href="{% url 'add_product' %}">Add new product</a>
+<br>
 <a href="/todo/products">View all Products</a>
 <br>
 <a href="/todo/products/?completed=1">View sold out Products</a>
