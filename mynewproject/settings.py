@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'myapp',
     'anotherapp',
     'todo_app',
-    'task_app'
+    'task_app',
+    'crud_app',
 ]
 
 MIDDLEWARE = [

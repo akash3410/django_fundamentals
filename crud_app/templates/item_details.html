@@ -1,0 +1,14 @@
+{%extends "layout.html"%}
+
+{%block tasks%}
+<h1>{{item.title | upper}} by {{item.updated_by}}</h1>
+
+<p>{{item.description}}</p>
+<p>{{item.created_at}}</p>
+<p>{{item.due_date}}</p>
+<p>{{item.completed}}</p>
+{%endblock%}
+
+{%block title%}
+Items
+{%endblock%}

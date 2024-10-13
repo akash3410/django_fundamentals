@@ -1,0 +1,14 @@
+{%extends "form_layout.html"%}
+
+{%block layout%}
+<h1 style="color: gray;"> Update Items </h1>
+<form method="post"">
+    {%csrf_token%}
+    {{forms}}
+    <button type="submit">Update</button>
+</form>
+{%endblock%}
+
+{%block title%}
+Update Item
+{%endblock%}

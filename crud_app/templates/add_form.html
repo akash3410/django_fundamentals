@@ -1,0 +1,15 @@
+{%extends "form_layout.html"%}
+
+{%block layout%}
+<h1 style="color: gray;"> Add Items </h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" style="margin-top: 5px;">submit</button>
+</form>
+{%endblock%}
+
+{%block title%}
+Items
+{%endblock%}
