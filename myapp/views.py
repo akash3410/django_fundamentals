@@ -6,7 +6,7 @@ def initial_load(request):
 
 def home_page(request, username=None):
     if username == None:
-        username = "jhon"
+        username = "Marry"
     page_name = {'name': "Home Page", "username": username}
     return render(request, "home.html", page_name)
 

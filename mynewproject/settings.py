@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'todo_app',
     'task_app',
     'crud_app',
+    'rdms_app',
 ]
 
 MIDDLEWARE = [

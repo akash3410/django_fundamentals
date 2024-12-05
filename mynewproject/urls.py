@@ -24,4 +24,5 @@ urlpatterns = [
     path('todo/', include("todo_app.urls")),
     path('', include("task_app.urls")),
     path('crud/', include("crud_app.urls")),
+    path('rdms/', include("rdms_app.urls")),
 ]
